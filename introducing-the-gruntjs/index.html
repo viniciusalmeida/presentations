@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Talk GruntJS</title>
+	<script src='../common_lib/polymer.min.js'></script>
+	<link rel='import' href='src/ninjapresentation.html'>
+	<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+</head>
+<body>
+
+	<!--
+	Esta apresentação é baseada no ninjaPresentation (github.com/viniciusalmeida/ninjaPresentation)
+	That presentation are based on ninjaPresentation (github.com/viniciusalmeida/ninjaPresentation)
+	-->
+
+	<ninjapresentation background='#e48632' color='#FFFFFF' fontfamily='Varela'>
+
+		<slide>
+			<h1>GruntJS</h1>
+			<h2>Uma breve descrição da ferramenta <span class='fragment'>{que é boa uma barbaridade}</span></h2>
+		</slide>
+
+		<slide>
+			<h2>O que é o GruntJS afinal?</h2>
+			<ul>
+				<li class='fragment'>Ferramenta CLI escrita em NodeJS que gerencia <b>procedimentos</b> do work-flow de desnvolvimento</li>
+				<li class='fragment'>Escrita por Ben Alman - <b>@cowboy</b></li>
+			</ul>
+		</slide>
+
+		<slide>
+			<ul>
+				<li>Lançada na BrazilJS de 2012 ,aqui em POA mesmo</li>
+				<li class='fragment'>Nasceu de uma necessidade de build no time desenvolvimento do jQuery</li>
+				<li class='fragment'>É extensível através de plug-ins, que estão todos disponíveis no NPM</li>
+			</ul>
+		</slide>
+
+		<slide>
+			<h1>Alguém deve ter se perguntado...</h1>
+			<h2 align='right'>...escrita em NodeJS?</h2>
+		</slide>
+
+		<slide>
+			<h3>NodeJS não é uma técnologia de servidor?</h3>
+			<p align='right'>
+				<span class='fragment'>NodeJS é muito popular por rodar no servidor.</span> 
+				<span class='fragment'>Porém ela possui outras aplicações, como programas CLI.</span> 
+				<span class='fragment'>Assim sendo, ele é instalado apenas na máquina de desenvolvimento.</span>
+			</p>
+		</slide>
+
+		<slide>
+			<h2>Facilidade de destribuição do GruntJS</h2>
+			<p align='right'>Apenas dois arquivos precisam estar no repositório de versionamento.</p>
+			<p><b>package.json e Gruntfile.js</b></p>
+		</slide>
+
+		<slide>
+			<h3>"Talk is cheap.</h3>
+			<h2>Show me the code."</h2>
+			<p align='right'>Torvalds, Linus</p>
+		</slide>
+
+		<slide>
+			<h1 align='center'>package.json</h1>
+			<p>Responsável pelo gerenciamento das dependências (plugins)</p>
+			<p align='right' class='fragment'><img src="assets/code.png" width='100'></p>
+		</slide>
+
+		<slide>
+			<h1 align='center'>Gruntfile.js</h1>
+			<p>Responsável pela configuração de todos os plugins e tarefas</p>
+			<p align='right' class='fragment'><img src="assets/code.png" width='100'></p>
+		</slide>
+
+	</ninjapresentation>
+
+</body>
+</html>
