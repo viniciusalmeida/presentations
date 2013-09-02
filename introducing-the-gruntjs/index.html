@@ -1,81 +1,184 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
-	<title>Talk GruntJS</title>
-	<script src='../common_lib/polymer.min.js'></script>
-	<link rel='import' href='src/ninjapresentation.html'>
-	<link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+    <meta charset='utf-8'>
+    <title>Talk GruntJS</title>
+    <script src='../common_lib/polymer.min.js'></script>
+    <link rel='import' href='src/ninjapresentation.html'>
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet'>
+    <style type="text/css">
+        code {
+            background: #000;
+            padding: 10px 20px;
+            font-family: 'Ubuntu Mono'
+        }
+    </style>
 </head>
 <body>
 
-	<!--
-	Esta apresentação é baseada no ninjaPresentation (github.com/viniciusalmeida/ninjaPresentation)
-	That presentation are based on ninjaPresentation (github.com/viniciusalmeida/ninjaPresentation)
-	-->
+    <!--
+    Esta apresentação é baseada no ninjaPresentation (github.com/viniciusalmeida/ninjaPresentation)
+    That presentation are based on ninjaPresentation (github.com/viniciusalmeida/ninjaPresentation)
+    -->
 
-	<ninjapresentation background='#e48632' color='#FFFFFF' fontfamily='Varela'>
+    <ninjapresentation background='#e48632' color='#FFFFFF' fontfamily='Varela'>
 
-		<slide>
-			<h1>GruntJS</h1>
-			<h2>Uma breve descrição da ferramenta <span class='fragment'>{que é boa uma barbaridade}</span></h2>
-		</slide>
+        <slide>
+            <h1>GruntJS</h1>
+            <h2>Uma breve introdução à ferramenta <span class='fragment'>{que é boa uma barbaridade}</span></h2>
+        </slide>
 
-		<slide>
-			<h2>O que é o GruntJS afinal?</h2>
-			<ul>
-				<li class='fragment'>Ferramenta CLI escrita em NodeJS que gerencia <b>procedimentos</b> do work-flow de desnvolvimento</li>
-				<li class='fragment'>Escrita por Ben Alman - <b>@cowboy</b></li>
-			</ul>
-		</slide>
+        <slide>
+            <h2>O que é o GruntJS afinal?</h2>
+            <ul>
+                <li class='fragment'>Ferramenta escrita em NodeJS que gerencia <b>procedimentos</b> do work-flow de desenvolvimento</li>
+                <li class='fragment'>Escrita por Ben Alman - <b>@cowboy</b></li>
+            </ul>
+        </slide>
 
-		<slide>
-			<ul>
-				<li>Lançada na BrazilJS de 2012 ,aqui em POA mesmo</li>
-				<li class='fragment'>Nasceu de uma necessidade de build no time desenvolvimento do jQuery</li>
-				<li class='fragment'>É extensível através de plug-ins, que estão todos disponíveis no NPM</li>
-			</ul>
-		</slide>
+        <slide>
+            <ul>
+                <li>Lançada na BrazilJS de 2012 ,aqui em POA mesmo</li>
+                <li class='fragment'>Nasceu de uma necessidade de build no time desenvolvimento do jQuery</li>
+                <li class='fragment'>É extensível através de plug-ins, que estão todos disponíveis no NPM</li>
+            </ul>
+        </slide>
 
-		<slide>
-			<h1>Alguém deve ter se perguntado...</h1>
-			<h2 align='right'>...escrita em NodeJS?</h2>
-		</slide>
+        <slide>
+            <h1>Alguém deve ter se perguntado...</h1>
+            <h2 align='right'>...escrita em NodeJS?</h2>
+        </slide>
 
-		<slide>
-			<h3>NodeJS não é uma técnologia de servidor?</h3>
-			<p align='right'>
-				<span class='fragment'>NodeJS é muito popular por rodar no servidor.</span> 
-				<span class='fragment'>Porém ela possui outras aplicações, como programas CLI.</span> 
-				<span class='fragment'>Assim sendo, ele é instalado apenas na máquina de desenvolvimento.</span>
-			</p>
-		</slide>
+        <slide>
+            <h3>NodeJS não é uma técnologia de servidor?</h3>
+            <p align='right'>
+                <span class='fragment'>NodeJS é muito popular por rodar no servidor.</span> 
+                <span class='fragment'>Porém ela possui outras aplicações, como programas CLI.</span> 
+                <span class='fragment'>Assim sendo, ele é instalado apenas na máquina de desenvolvimento.</span>
+            </p>
+        </slide>
 
-		<slide>
-			<h2>Facilidade de destribuição do GruntJS</h2>
-			<p align='right'>Apenas dois arquivos precisam estar no repositório de versionamento.</p>
-			<p><b>package.json e Gruntfile.js</b></p>
-		</slide>
+        <slide>
+            <h2>Facilidade de distribuição do GruntJS</h2>
+            <p align='right'>Apenas dois arquivos precisam estar no repositório de versionamento.</p>
+            <p><b>package.json e Gruntfile.js</b></p>
+        </slide>
 
-		<slide>
-			<h3>"Talk is cheap.</h3>
-			<h2>Show me the code."</h2>
-			<p align='right'>Torvalds, Linus</p>
-		</slide>
+        <slide>
+            <h3 align='right'>Para começar</h3>
+            <h2>Após instalarmos o NodeJS...</h2>
+            <p align='center'><code>$ sudo npm install -g grunt-cli</code></p>
+        </slide>
 
-		<slide>
-			<h1 align='center'>package.json</h1>
-			<p>Responsável pelo gerenciamento das dependências (plugins)</p>
-			<p align='right' class='fragment'><img src="assets/code.png" width='100'></p>
-		</slide>
+        <slide>
+            <h1 align='center'>package.json</h1>
+            <p>Responsável pelo gerenciamento das dependências (plugins)</p>
+            <p align='right' class='fragment'><img src="assets/code.png" width='100'></p>
+        </slide>
 
-		<slide>
-			<h1 align='center'>Gruntfile.js</h1>
-			<p>Responsável pela configuração de todos os plugins e tarefas</p>
-			<p align='right' class='fragment'><img src="assets/code.png" width='100'></p>
-		</slide>
+        <slide>
+            <h3 align='right'>Após isso</h3>
+            <h2 align='center'><code>$ sudo npm install</code></h2>
+            <p>Para instalar as dependências descritas no package.json</p>
+        </slide>
 
-	</ninjapresentation>
+        <slide>
+            <h1 align='center'>Gruntfile.js</h1>
+            <p>Responsável pela configuração de todos os plugins e tarefas</p>
+            <p align='right' class='fragment'><img src="assets/code.png" width='100'></p>
+        </slide>
+
+        <slide>
+            <h1 align='right'>Principais plugins</h1>
+            <p align='right'>Front-end:</p>
+            <ul>
+                <li>CoffeeScript, LESS, SASS, Stylus</li>
+                <li>Jasmine, Qunit, Mocha</li>
+            </ul>
+        </slide>
+
+        <slide>
+            <p>...</p>
+            <ul>
+                <li>jsHint, jsLint, CoffeeLint, JSONLint, LESSLint, CSSLint</li>
+                <li>Uglify, CSSmin, HTMLmin, imagemin</li>
+            </ul>
+        </slide>
+
+        <slide>
+            <h1 align='right'>Principais plugins</h1>
+            <p align='right'>Back-end (PHP):</p>
+            <ul>
+                <li>PHPLint, PHP analyzer</li>
+                <li>PHPSpecs, PHPUnit</li>
+                <li>PHP Documentator</li>
+            </ul>
+        </slide>
+
+        <slide>
+            <h2>Repositório de plugins disponíveis</h2>
+            <p align='right'>gruntjs.com/plugins</p>
+            <p align='right' class='fragment'><img src="assets/logo.png" width='100'></p>
+        </slide>
+
+        <slide>
+            <h2>Muito bonitinho isso tudo funcionando mas...</h2>
+            <h3 align='right'>...isso não parece prático de ser usado no meu trabalho</h3>
+        </slide>
+
+        <slide>
+            <h2>Plugin matador</h3>
+            <h3 align='right'>grunt-contrib-watch</h3>
+            <p>Esse sim trabalhará por você ;)</p>
+            <p align='right' class='fragment'><img src="assets/logo.png" width='100'></p>
+        </slide>
+
+        <slide>
+            <h2 align='right'>Até aqui a ferramenta pareceu buenacha mas ela ainda vai muito além</h2>
+            <p>Vou citar um case</p>
+        </slide>
+
+        <slide>
+            <h2>O LESS é uma ferramenta muito interessante</h2>
+            <p align='right'>Mas quem já tentou fazer um desenvolvimento modular com ela certamente ficou muito frustrado...</p>
+        </slide>
+
+        <slide>
+            <p>...ela tem escopo de arquivo para suas variáveis e mixins.</p>
+            <p>E isso não é ruim. É MUITO ruim.</p>
+            <h1 align='right' class='fragment'>:(</h1>
+        </slide>
+
+        <slide>
+            <h2>Mas o grunt está aí para nos salvar</h2>
+            <p align='right'>E com um único plugin!</p> 
+            <h2>grunt-contrib-concat</h2>
+        </slide>
+
+        <slide>
+            <h2>Bastou concatenar os arquivos antes do parse para CSS e o problema foi resolvido de forma simples</h2>
+        </slide>
+
+        <slide>
+            <h2>Uma simples combinação de plugins pode fazer coisas MUITO legais</h2>
+            <p align='right'>Basta usarmos a cabeça para esquematizar a fórmula</p>
+        </slide>
+
+        <slide>
+            <p>Essa foi a introdução ao GrunJS :)</p>
+            <h1 align='right'>Obrigado</h1>
+            <p>Perguntas?</p>
+            <p align='right'><b>@vini_monstro</b></p>
+        </slide>
+
+        <slide>
+            <p><b>Bom apetite :)</b></p>
+            <p>Os códigos e links serão disponibilizados junto com a apresentação no GitHub.</p>
+            <p>Essa apresentação foi feita com os web components da ninjaPresentation.</p>
+        </slide>
+
+    </ninjapresentation>
 
 </body>
 </html>

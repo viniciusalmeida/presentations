@@ -1,0 +1,19 @@
+@color1: red;
+@color2: white;
+
+.border-radius-inter-mixin (@radius) {
+    background: @color1;
+    border: 1px solid @color2;
+    border-radius: @radius;
+}
+
+.melhor-time-do-rs {
+    float: left;
+    .border-radius-inter-mixin(10px);
+
+    p {
+        color: @color1;
+        content: 'Inter';
+        text-align: center;
+    }
+}

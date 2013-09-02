@@ -1,0 +1,6 @@
+{
+    "name": "gruntPresentation",
+    "dependencies": {
+        "grunt-contrib-less": "0.7.0"
+    }
+}
