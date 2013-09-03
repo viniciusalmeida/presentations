@@ -14,7 +14,7 @@
 * LESS - pré-processador de CSS mencionado no slide #18 - [LESSCSS](http://lesscss.org)
 * Plugin contrib-concat mencionado no slide #20 - [grunt-contrib-concat](https://npmjs.org/package/grunt-contrib-concat)
 * Perfil do apresentador (eu, no caso) no Twitter mencionado no slide #23 - [@vini_monstro](https://twitter.com/vini_monstro)
-* ninjaPresentation mencionado no slide #24 - [ninjaPresentation no Github](https://github.com/viniciusalmeida/ninja-presentation)
+* ninjaPresentation mencionado no slide #24 - [ninjaPresentation no Github](https://github.com/viniciusalmeida/ninja-presentation) 
 
 ## Agradeço a todos pela atenção durante a talk
 
