@@ -1,5 +1,7 @@
 # Review da BrazilJS 2013
 
+[Link para a apresentação](http://viniciusalmeida.github.io/presentations/review-braziljs-2013)
+
 Slides utilizados durante o review do que vimos no BrazilJS.
 
 *Apresentado por [@fernandoperigolo](https://github.com/fernandoperigolo) e [@viniciusalmeida](https://github.com/viniciusalmeida)*
