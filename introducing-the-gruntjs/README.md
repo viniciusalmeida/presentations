@@ -8,7 +8,7 @@
 * Perfil do Ben Alman, criador da ferramenta, no Twitter mancionado no slide #2 - [@cowboy](https://twitter.com/cowboy)
 * NPM Gerenciador de pacotes no NodeJS mencionado no slide #3 - [NPM site](https://npmjs.org)
 * package.json mencionado no slide #8 - [link para o código](https://github.com/viniciusalmeida/presentations/blob/master/introducing-the-gruntjs/codes/package.json)
-* Gruntfile.js mencionado no slide #10 = [link para o código](https://github.com/viniciusalmeida/presentations/blob/master/introducing-the-gruntjs/codes/Gruntfile.js)
+* Gruntfile.js mencionado no slide #10 - [link para o código](https://github.com/viniciusalmeida/presentations/blob/master/introducing-the-gruntjs/codes/Gruntfile.js)
 * Repositório de plugins do GruntJS mencionado no slide #14 - [site oficial do GruntJS](http://gruntjs.com/plugins)
 * Plugin contrib-watch mencionado no slide #16 - [grunt-contrib-watch](https://npmjs.org/package/grunt-contrib-watch)
 * LESS - pré-processador de CSS mencionado no slide #18 - [LESSCSS](http://lesscss.org)
